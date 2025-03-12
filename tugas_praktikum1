@@ -1,0 +1,34 @@
+#daftar paket menu
+print(f"daftar paket menu")
+print("paket ayam = 20000")
+print("paket sapi = 35000")
+print("paket cumi cumi = 45000")
+
+#menginput pesanan
+pesanan = (input("paket menu : "))
+
+#harga paket pesanan
+if pesanan  == "ayam" :
+     harga  = 20000
+elif pesanan == "sapi" :
+    harga = 35000
+elif pesanan == "cumi-cumi" :
+    harga = 45000
+else :
+    print("paket menu tidak tersedia")
+
+#menginput ongkir
+jarak = int(input("jarak dari rumah ke restoran : "))
+
+#ongkir berdasarkan jarak ke restoran
+if jarak<1 :
+    ongkir = 0
+elif 1<=jarak<=3 :
+    ongkir = 7000
+else :
+    ongkir = 15000
+
+#hitung harga total pesanan
+harga_total = harga + ongkir
+
+print(f"harga total pesanan adalah Rp{harga_total}")
